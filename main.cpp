@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <conio.h>
+//#include <ctime>
 
 using namespace std;
 
@@ -35,6 +36,7 @@ void snakeController(){
 		if (key == 'a') snakeDirection = 'a';
 		if (key == 'd') snakeDirection = 'd';
 	}
+	Sleep(100);
 }
 
 //EventsCheckers ==================================================================================================
@@ -105,10 +107,10 @@ bool drawElementOfScreen(int x, int y){
 		currentSnakeElementY = snakeElements[i][1];
 		if ((x == currentSnakeElementX) && (y == currentSnakeElementY)){
 			if (index == 0){
-				cout << 'H';
+				cout << '■';
 			}
 			else{
-				cout << 'B';
+				cout << '□';
 			}
 			continue;
 		}
@@ -117,7 +119,7 @@ bool drawElementOfScreen(int x, int y){
 			continue;
 		}
 		if ((x == 0) && (x == SIZE_SCREEN_X) && (y == 0) && (y == SIZE_SCREEN_Y)){
-			cout << '#';
+			cout << '▥';
 			continue;
 		}
 		cout << ' ';
