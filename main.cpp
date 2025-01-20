@@ -25,6 +25,7 @@ void snakeUpdate(){
 	if (snakeDirection == 'd') snakeElements.insert(snakeElements.begin(), {snakeHeadX + 1, snakeHeadY});
 	snakeElements.pop_back();
 }
+
 void snakeController(){
 	char key;
 	while (_kbhit()) {
@@ -35,6 +36,7 @@ void snakeController(){
 		if (key == 'd') snakeDirection = 'd';
 	}
 }
+
 //EventsCheckers ==================================================================================================
 bool checkBorders(){
 	int snakeHeadX = snakeElements[0][0];
