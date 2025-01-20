@@ -7,7 +7,7 @@ using namespace std;
 const int SIZE_SCREEN_X = 43;
 const int SIZE_SCREEN_Y = 43;
 
-vector <vector <int> > snakeElements = {{SIZE_SCREEN_X / 2, SIZE_SCREEN_Y / 2}};
+vector <vector <int>> snakeElements = {{SIZE_SCREEN_X / 2, SIZE_SCREEN_Y / 2}};
 
 char snakeDirection = 'w';
 
