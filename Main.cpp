@@ -20,6 +20,7 @@ int foodY = -1;
 void snakeUpdate();
 void snakeController();
 bool isBorderCollision();
+bool eatingPrediction();
 bool isEating();
 bool isSelfCollision();
 bool gameEngine();
