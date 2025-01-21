@@ -181,8 +181,8 @@ bool drawElementOfScreen(int x, int y){
 
 }
 void createFood(){
-	foodX = 2 + rand() % (SIZE_SCREEN_X - 3);
-	foodY = 2 + rand() % (SIZE_SCREEN_Y - 3);
+	foodX = 2 + rand() % (SIZE_SCREEN_X - 3);//1
+	foodY = 2 + rand() % (SIZE_SCREEN_Y - 3);//1
 }
 //Main  ===========================================================================================================
 int main(){
